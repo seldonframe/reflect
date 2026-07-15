@@ -26,3 +26,11 @@ customer trust or public commitments.
 ## Review cadence
 <!-- When the loop should set review-by dates. -->
 Example: tactical calls 3 weeks out, strategic calls one quarter out.
+
+## My brain files (optional)
+<!-- Paths to your personal knowledge files — notes, a CLAUDE.md, a lessons
+     journal, a strategy doc. The loop skims these while framing a decision,
+     because your own recorded experience outranks any generic mental model. -->
+- Example: ~/notes/BRAIN.md
+- Example: ./CLAUDE.md
+- Example: ./docs/strategy/positioning.md

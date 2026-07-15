@@ -18,7 +18,14 @@ Decision log: `docs/decisions/LOG.md` in the current repo — create it on first
 
 If a `CONTEXT.md` exists next to this file, load it first. It holds the user's
 settled decisions (things a reflect must never re-litigate), their recurring
-decision types, and their risk posture. Without it, run generic.
+decision types, their risk posture, and optionally pointers to their **brain
+files** (personal notes, a CLAUDE.md, a lessons journal). When brain files are
+listed, skim them during framing (§1) for prior thinking on this decision —
+the user's own recorded experience outranks any generic lens.
+
+Also load `docs/decisions/LESSONS.md` if it exists (see §0) — lessons distilled
+from the user's own missed predictions are the highest-authority input this
+loop has.
 
 ## Upstream rule — settled decisions stay settled
 
@@ -36,6 +43,12 @@ is still `open`. Surface them before anything else:
 > What happened?" — update the entry's status/outcome from the answer (or from
 > evidence you can check yourself). This is the calibration flywheel; skipping it
 > makes the whole system decorative.
+
+When an entry resolves as a **miss**, distill it into ONE transferable line and
+append it to `docs/decisions/LESSONS.md` (create the file on first miss):
+`- YYYY-MM-DD — <what was predicted> missed because <root cause>. Rule: <one-line rule>.`
+Lessons compound: they're loaded at the start of every future reflect and
+applied before any lens — your own misses are better teachers than any essay.
 
 ### 1. Frame the decision (references/decision-anatomy.md)
 State, in 2-4 sentences:

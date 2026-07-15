@@ -27,17 +27,30 @@ runs, instead of a listicle you read once and forget.
    review-by date. The next reflect *opens* by confronting past-due predictions:
    *"you predicted X by now — what happened?"* Mental models without a feedback
    loop are entertainment. The log is the product.
+4. **It learns from your misses.** When a logged prediction turns out wrong, the
+   loop distills the miss into a one-line rule in `LESSONS.md` — and applies
+   your own lessons before any lens on every future run. Six months in, the most
+   valuable file in this system is the one you wrote by being wrong.
 
-## Install (Claude Code)
+## Install
 
+**Claude Code** (full experience — skill + lens routing + log):
 ```bash
 # user-level: works in every project
-git clone https://github.com/YOURNAME/reflect ~/.claude/skills/reflect
+git clone https://github.com/seldonframe/reflect ~/.claude/skills/reflect
 ```
+Or drop the folder into one repo at `.claude/skills/reflect/`. Then say:
+**`reflect on <your decision>`**
 
-Or drop the folder into a single repo at `.claude/skills/reflect/`.
+**Cursor / Codex / any agent that reads AGENTS.md:** paste [PROMPT.md](PROMPT.md)
+into your `AGENTS.md` (or a Cursor rule). Same loop, self-contained.
 
-Then just say: **`reflect on <your decision>`**
+**ChatGPT / Gemini / plain Claude.ai:** paste [PROMPT.md](PROMPT.md) into custom
+instructions or the start of a chat.
+
+**Don't know what to reflect on first?** [STARTER-QUESTIONS.md](STARTER-QUESTIONS.md)
+has 10 decisions worth a run this week — one a day and the loop starts auditing
+you by month's end.
 
 ## Make it yours (2 minutes, biggest lever)
 
@@ -66,3 +79,9 @@ almost all are [Farnam Street](https://fs.blog) essays (read the originals;
 they're worth it), plus Jeff Bezos's shareholder letters. This repo contains
 paraphrased compactions with attribution, not reproductions. The loop, routing
 table, and calibration log are original.
+
+---
+
+Built by the team behind [SeldonFrame](https://github.com/seldonframe/seldonframe) —
+an open-source platform where AI agents run your front office (calls, bookings,
+CRM, follow-ups). Loops like this one are how we build it.
