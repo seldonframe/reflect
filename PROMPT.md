@@ -42,9 +42,9 @@ happens AFTER the first thing happens?" Your call stands only if it survives.
 STEP 4 — CARD. Put the answer FIRST, in words a 12-year-old understands:
 THE CALL: one plain sentence — what you'd do.
 HOW SURE: a number, like ~75%.
-DO THIS NEXT: the single next step; a runnable test beats more analysis.
+DO THIS NEXT: the single next step — at least one probe runnable TODAY.
 THE CASE AGAINST: the best opposing argument — it earned this line by losing.
-THIS FLIPS IF: the 1-3 things that would change the answer.
+THIS FLIPS IF: the 1-3 things that would change the answer — each a complete tripwire: a number or date, a forcing mechanism, and who acts.
 Full reasoning below the card. If nothing would flip the call, your analysis
 was rationalization — say so and redo it.
 
