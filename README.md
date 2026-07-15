@@ -2,7 +2,7 @@
 
 **The problem with your decisions isn't information. It's honesty.** Every
 framework you've read is available to you and unused at the moment it matters.
-This makes your AI enforce them — and keep score.
+This makes your AI fire them — at the exact moment they bite.
 
 You're mid-build. Claude Code, Cursor, Codex — doesn't matter. And the decisions
 come at you all day:
@@ -22,7 +22,7 @@ module."
 
 This turns that thinking into something your AI **runs** on your actual project.
 
-![The reflect loop: you type one sentence, your AI checks if the decision can be undone, gives you a straight answer, and keeps score](assets/reflect-loop.png)
+![The reflect loop: you type one sentence, your AI checks if the decision can be undone, attacks its own answer, and gives you a straight call with the case against](assets/reflect-loop.png)
 
 You type one sentence:
 
@@ -63,22 +63,14 @@ This is the part generic advice can't do. Connected to your repo, the loop:
    battery: rebuild the logic from first principles, imagine the decision
    already failed and find what killed it, check second-order effects, check
    the odds against base rates.
-2. **31 thinking tools, picked automatically.** Farnam Street's mental models +
-   Bezos's letters + a builders' pack (DHH on complexity merchants, Tobi Lütke,
-   Wozniak on craft, Peter Kaufman…). You never choose a framework — each
-   decision gets only the 3-8 that bite, so you get sharp thinking, not a
-   lecture.
-
-## The part nobody else has: it keeps score
-
-Every answer gets logged with a prediction and a check-back date. The next run
-**opens by confronting the scoreboard**:
-
-> "Three weeks ago you predicted the rewrite would take two weekends. What happened?"
-
-When you were wrong, it writes down *why* in one line — and applies that lesson
-to every future decision. So it gets smarter about **your** patterns: your
-estimates, your rewrite itch, your shiny-tool weakness. A book never did that.
+2. **It attacks its own answer before you see it.** Ten moves run against its
+   lean (question the requirement, run the arithmetic, find the disguised
+   option, set the kill threshold, mirror the deal…) — then it fires the 1-2
+   thinkers MOST HOSTILE to its conclusion from a 37-tool library (Bezos's
+   letters, Musk's algorithm, Farnam Street, DHH, Tobi Lütke, Wozniak — all
+   sourced). On irreversible calls it spawns an independent adversary that
+   gets the facts but not the lean. Every card shows THE CASE AGAINST — the
+   best opposing argument, which earned that line by losing.
 
 ## It grows with you: `reflect learn <source>`
 
@@ -120,13 +112,6 @@ Add this to your CLAUDE.md / AGENTS.md and reflect offers itself when you're stu
 When I'm visibly going back and forth on a decision (pros/cons lists,
 "should we X or Y", "I can't decide"), offer to run reflect on it — once.
 ```
-
-## Score yourself weekly
-
-Say **`reflect review`** and get THE SCORECARD: hit rate, calibration by
-confidence bucket ("when it said ~80% it was right 6/8 times"), the week's
-distilled lesson, what's due next. Every prediction is committed to git
-*before* its outcome exists — a scoreboard nobody can fake.
 
 ## Make it yours (2 minutes, biggest upgrade)
 
