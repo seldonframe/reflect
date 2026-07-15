@@ -6,8 +6,15 @@ come at you all day:
 *Rewrite this mess or patch it? Ship now or polish? Build auth myself or pay for
 it? Kill the feature nobody uses? Postgres or the shiny thing?*
 
-Most builders answer these with whatever mood they're in. The best builders —
-Bezos, Munger, DHH, Tobi Lütke — wrote down *how they think* before they answer.
+And because building something means selling it too:
+
+*Price at $29 or $99? Take the agency deal? Niche down or stay broad? Quit the
+job? Monetize the side project or keep it free?*
+
+Most builders answer all of these with whatever mood they're in. The best —
+Bezos, Musk, Munger, DHH, Tobi Lütke — wrote down *how they think* before they
+answer. This loop treats "raise my prices" with the same rigor as "rewrite the
+module."
 
 This turns that thinking into something your AI **runs** on your actual project.
 

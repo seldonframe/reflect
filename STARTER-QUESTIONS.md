@@ -21,6 +21,18 @@ honestly, and save the log row it gives you.
 5. **`reflect on: which dependency would hurt most if it broke, changed pricing, or died tomorrow?`**
    Walk-away plans are cheap today and expensive the week you need one.
 
+## If you're selling what you build
+
+6. **`reflect on: should I monetize this side project or keep it free?`**
+   The explore/exploit lens plus honest base rates on "I'll monetize later."
+
+7. **`reflect on: niche down or stay broad?`**
+   The question every builder-founder re-litigates monthly. Log it once with a
+   review date and stop paying rent on it.
+
+8. **`reflect on: take the client/agency deal or keep building product?`**
+   Cash now vs compounding later — and the obligation chains a big client creates.
+
 ## The all-purpose ten
 
 1. **`reflect on: the recurring expense I'd never approve if it were proposed fresh today`**
