@@ -107,14 +107,31 @@ Work through, loading each reference as you use it:
 8. **Decision matrix** — only if genuinely 3+ options × 3+ criteria; weight
    criteria before scoring options (else the matrix launders a pre-made choice).
 
-### 4. Recommend (always, both paths)
-End with, in this order:
-1. **The call** — one sentence, opinionated. No option menus without a pick.
-2. **Confidence** — a number (e.g., "~75%"), not an adverb.
-3. **What would change my mind** (mandatory) — 1-3 specific observations that
-   would flip the recommendation. This is the anti-rationalization tripwire.
-4. **Cheap tests** — anything under a day's effort that would raise confidence
-   before committing (only if such tests exist).
+### 4. Answer (always, both paths) — the ANSWER CARD comes FIRST
+The user should get the answer in 10 seconds without scrolling. Open every
+reflect's final output with this card, in plain words a 12-year-old understands:
+
+> **THE CALL:** <one plain sentence — what I'd do>
+> **HOW SURE:** ~X% (<coin-flip / leaning / confident / near-certain>)
+> **DO THIS NEXT:** <the single concrete next step>
+> **BECAUSE:** <max 3 short bullets. Each one: plain reason — "so you <benefit>">
+> **THIS FLIPS IF:** <1-3 things that would change the answer — watch for them>
+
+Then a divider, then the full thinking (framing, the door check, each lens and
+what it surfaced) for readers who want to check the work. Never make the user
+hunt for the verdict.
+
+**Plain-words rule (applies to the whole output, not just the card):** famous
+names stay (Bezos, Munger — they're the anchor); every other framework term must
+carry its meaning in the sentence. Not "this is Type 2 with contained blast
+radius" but "you can undo this in a week, so we move fast." Not "pre-mortem
+surfaced three failure vectors" but "imagine it's 6 months later and this
+failed — here's what most likely killed it."
+
+The "THIS FLIPS IF" line is mandatory — it's the anti-rationalization tripwire.
+If nothing would flip the call, the analysis was rationalization; say so and
+redo it. Include cheap tests (under a day's effort) in DO THIS NEXT when they
+exist.
 
 ### 5. Log (always)
 Append to the decision log:

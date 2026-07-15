@@ -1,84 +1,91 @@
-# reflect — a decision-making loop for Claude
+# reflect — Bezos-level thinking on your toughest calls, in 5 minutes
 
-**Say `reflect on <any decision>` and your AI runs the decision process of the
-best decision-makers alive — then keeps score.**
+Everybody decides. Billionaires *think it through* differently — and that
+thinking process is written down. Bezos put his in his shareholder letters.
+Warren Buffett and Charlie Munger spent 50 years explaining theirs. Farnam
+Street turned it all into essays.
 
-Jeff Bezos isn't successful because he wakes up at 5am. Elon Musk isn't
-successful because he works 100-hour weeks. Warren Buffett and Charlie Munger didn't compound
-Berkshire because of grit. What they share is a **decision-making process** —
-and unlike the 5am club, a process is copyable.
+This turns those essays into something your AI actually **runs**.
 
-This skill compacts **23 decision frameworks** — Farnam Street's mental-model
-essays plus Bezos's shareholder-letter framework — into a loop your AI actually
-runs, instead of a listicle you read once and forget.
+You type one sentence:
 
-## What makes it different from every mental-models thread you've read
+```
+reflect on: should I raise my prices?
+```
 
-1. **It routes instead of lecturing.** 23 lenses exist, but every decision gets
-   only the 3–8 that bite. First move is the Bezos gate: reversible decision →
-   fast pass at ~70% information; irreversible → the full battery (first
-   principles, mandatory pre-mortem, second-order effects, base rates,
-   optionality).
-2. **It's forced to have an opinion.** Every run ends with one call, a
-   confidence number, and — mandatory — **"what would change my mind."** If
-   nothing would change its mind, the analysis was rationalization, and the loop
-   says so.
-3. **It keeps score.** Every decision is logged with an expected outcome and a
-   review-by date. The next reflect *opens* by confronting past-due predictions:
-   *"you predicted X by now — what happened?"* Mental models without a feedback
-   loop are entertainment. The log is the product.
-4. **It learns from your misses.** When a logged prediction turns out wrong, the
-   loop distills the miss into a one-line rule in `LESSONS.md` — and applies
-   your own lessons before any lens on every future run. Six months in, the most
-   valuable file in this system is the one you wrote by being wrong.
+Five minutes later you have:
 
-## Install
+- **A straight answer.** Not "here are some considerations" — an actual call,
+  first thing you read, in plain words.
+- **How sure it is** (a real number, like ~75%), so you know whether to act now
+  or test first.
+- **The exact next step**, so you're never left with analysis and no action.
+- **"This flips if…"** — the 1-3 things that would change the answer, so you
+  know what to watch instead of second-guessing forever.
 
-**Claude Code** (full experience — skill + lens routing + log):
+## What you do vs. what you get
+
+**You do:** type one sentence about the thing you're stuck on. Answer maybe one
+question. That's it — no books to read, no frameworks to memorize.
+
+**Your AI does:** the heavy thinking, the way the best decision-makers do it:
+
+1. **First it asks: "can this be undone?"** Bezos's rule. If yes, you get a
+   fast answer at ~70% information — because slow-deciding easy stuff is how
+   companies (and people) stall. If it's a one-way door — real money, your
+   reputation, people — it slows down and runs the full process: rebuild the
+   logic from scratch, imagine the decision already failed and find what killed
+   it, check what happens *after* the first thing happens, check the odds
+   against reality instead of hope.
+2. **It picks the right thinking tools automatically.** There are 23 in here
+   (compacted from Farnam Street + Bezos's letters, all linked). You never
+   choose one — every decision gets only the 3-8 that actually matter for it,
+   so you get sharp thinking instead of a lecture.
+
+## The part nobody else has: it keeps score
+
+Every answer gets logged with a prediction and a check-back date. The next time
+you run it, it **opens by confronting the scoreboard**:
+
+> "Three weeks ago you predicted X would happen by now. Did it?"
+
+When you were wrong, it writes down *why* in one line — and applies that lesson
+to every future decision. So it doesn't just think for you; **it gets smarter
+about YOUR patterns every month you use it.** Reading about mental models never
+did that. That's the difference between a book and a coach.
+
+## Install (30 seconds)
+
+**Claude Code:**
 ```bash
-# user-level: works in every project
 git clone https://github.com/seldonframe/reflect ~/.claude/skills/reflect
 ```
-Or drop the folder into one repo at `.claude/skills/reflect/`. Then say:
-**`reflect on <your decision>`**
+Then say `reflect on <anything you're stuck on>`. Done.
 
-**Cursor / Codex / any agent that reads AGENTS.md:** paste [PROMPT.md](PROMPT.md)
-into your `AGENTS.md` (or a Cursor rule). Same loop, self-contained.
+**Cursor / Codex:** paste [PROMPT.md](PROMPT.md) into your `AGENTS.md`.
+**ChatGPT / Gemini / Claude.ai:** paste [PROMPT.md](PROMPT.md) into custom
+instructions or the top of a chat. Same loop, no setup.
 
-**ChatGPT / Gemini / plain Claude.ai:** paste [PROMPT.md](PROMPT.md) into custom
-instructions or the start of a chat.
+## Don't know what to ask first?
 
-**Don't know what to reflect on first?** [STARTER-QUESTIONS.md](STARTER-QUESTIONS.md)
-has 10 decisions worth a run this week — one a day and the loop starts auditing
-you by month's end.
+[STARTER-QUESTIONS.md](STARTER-QUESTIONS.md) — 10 questions worth running this
+week, like *"which recurring expense would I never approve if it were proposed
+fresh today?"* and *"which 'safe' choice am I making to avoid blame rather than
+to win?"* One a day, and by next month the scoreboard is working for you.
 
-## Make it yours (2 minutes, biggest lever)
+## Make it yours (2 minutes, biggest upgrade)
 
-Copy `CONTEXT.md.example` → `CONTEXT.md` and fill in three things: your settled
-decisions (things the loop must never re-litigate), your recurring decision
-types, and your risk posture. The loop reads it first and every recommendation
-lands in *your* context instead of generic advice.
-
-## The lens library
-
-Each file in `references/` compacts one source essay: core idea → when it bites
-→ how to run it → failure modes. `references/00-index.md` is the routing table.
-
-Backbone: Bezos Type-1/Type-2 · decision anatomy · decision matrix · OODA.
-Reasoning: first principles · inversion & avoiding stupidity · Chesterton's
-fence · Rota's lessons. Bias & probability: availability bias · probability
-errors · algorithms & bias · best-case · worst-day. Time & options:
-explore/exploit · optionality · slack · externalities. Human factors: bikeshed
-effect · defensive decisions · captaincy · break the chain · Hemingway's
-suitcase. Meta: the mental-models latticework.
+Copy `CONTEXT.md.example` → `CONTEXT.md` and tell it three things: decisions
+you've already made (so it never re-argues them), what you usually decide on,
+and how bold you want the answers. Every answer lands in *your* situation
+instead of generic advice.
 
 ## Credits & sources
 
-The frameworks belong to their authors. Every reference file links its source —
-almost all are [Farnam Street](https://fs.blog) essays (read the originals;
-they're worth it), plus Jeff Bezos's shareholder letters. This repo contains
-paraphrased compactions with attribution, not reproductions. The loop, routing
-table, and calibration log are original.
+The thinking belongs to the thinkers. Every file links its source — almost all
+[Farnam Street](https://fs.blog) essays (read the originals; they're excellent),
+plus Jeff Bezos's shareholder letters. This repo is paraphrased compactions with
+attribution, not copies. The loop, the routing, and the scoreboard are original.
 
 ---
 

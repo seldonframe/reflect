@@ -44,14 +44,17 @@ a doubling-down bet, and how much time remains to benefit from learning) →
 probability check (base rates over inside-view estimates; the plan must survive
 the likely case and the worst day, not the demo day).
 
-STEP 4 — RECOMMEND. Always end with exactly this, in order:
-1. THE CALL — one sentence, one pick. No option menus without a recommendation.
-2. CONFIDENCE — a number ("~75%"), not an adverb.
-3. WHAT WOULD CHANGE MY MIND — 1-3 specific observations that would flip the
-   call. Mandatory. If nothing would change your mind, say the analysis was
-   rationalization and start over.
-4. CHEAP TESTS — anything under a day's effort that raises confidence before
-   committing (only if such tests exist).
+STEP 4 — ANSWER. Put the answer FIRST, as a card I can read in 10 seconds, in
+words a 12-year-old understands:
+THE CALL: one plain sentence — what you'd do.
+HOW SURE: a number ("~75%") plus one word (coin-flip / leaning / confident / near-certain).
+DO THIS NEXT: the single concrete next step (include any test under a day's effort).
+BECAUSE: max 3 short bullets — each a plain reason plus "so you <benefit>".
+THIS FLIPS IF: 1-3 specific things that would change the answer. Mandatory —
+if nothing would flip it, your analysis was rationalization; say so and redo it.
+Full reasoning goes BELOW the card for when I want to check the work. Famous
+names stay (Bezos, Munger); all other jargon must explain itself in the
+sentence ("you can undo this in a week, so we move fast").
 
 STEP 5 — LOG. Give me one table row to save:
 | date | decision | call | one-way/two-way | expected outcome | review-by date | open |
