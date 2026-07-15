@@ -1,0 +1,28 @@
+# CONTEXT.md — make the loop yours
+
+Copy this file to `CONTEXT.md` (same folder as SKILL.md) and fill it in.
+The reflect loop loads it before every run.
+
+## Who I am
+<!-- One paragraph: role, company/stage, what a "big" decision means for you in $ or impact. -->
+Example: Solo founder of a B2B SaaS at ~$10k MRR. A $5k mistake is survivable;
+a positioning flip-flop is not.
+
+## Settled decisions — NEVER re-litigate these
+<!-- Decisions you've made deliberately and don't want re-opened by every analysis.
+     The loop may flag genuinely new evidence against them, but never quietly reopens. -->
+- Example: We are bootstrapped; fundraising is off the table until $50k MRR.
+- Example: Pricing is flat-rate; no usage-based pricing.
+
+## My recurring decision types
+<!-- What you'll actually reflect on — helps the loop pick lenses fast. -->
+- Example: feature build-vs-kill, channel investments, hiring first roles, partnership offers.
+
+## Risk posture
+<!-- How you want recommendations calibrated. -->
+Example: Aggressive on reversible bets, conservative on anything touching
+customer trust or public commitments.
+
+## Review cadence
+<!-- When the loop should set review-by dates. -->
+Example: tactical calls 3 weeks out, strategic calls one quarter out.
