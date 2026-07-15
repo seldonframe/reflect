@@ -4,7 +4,7 @@
 best decision-makers alive — then keeps score.**
 
 Jeff Bezos isn't successful because he wakes up at 5am. Elon Musk isn't
-successful because he works 100-hour weeks. Warren Munger didn't compound
+successful because he works 100-hour weeks. Warren Buffett and Charlie Munger didn't compound
 Berkshire because of grit. What they share is a **decision-making process** —
 and unlike the 5am club, a process is copyable.
 
