@@ -1,6 +1,6 @@
 ---
 name: reflect
-description: Run a structured decision-making loop on any decision — strategy, product, pricing, career, personal. Invoke whenever the user says "reflect" / "reflect on X", or when facing a consequential decision that deserves structured treatment. Stakes-scaled - reversible decisions get a fast pass, irreversible ones get the full battery. Every run ends with an opinionated recommendation and a decision-log entry.
+description: Run a structured decision-making loop on any decision — strategy, product, pricing, career, personal. Invoke whenever the user says "reflect" / "reflect on X" / "reflect review", AND offer it (once) when the user is visibly circling a decision — "I keep going back and forth", "should we X or Y", "pros and cons", "I can't decide". Stakes-scaled - reversible decisions get a fast pass, irreversible ones get the full battery plus an independent adversary. Every run ends with an opinionated call and a logged, scoreable prediction.
 ---
 
 # /reflect — the decision-making loop
@@ -216,21 +216,57 @@ When the user says **"reflect learn <url / person / book>"**, add a new lens:
 4. **Report** what was added and the situations where the new lens will now
    fire, so the user can correct the routing while it's fresh.
 
-## Guardrails (check yourself during every run)
-- **Bikeshed alarm** — effort must scale with stakes, not with how easy the topic
-  is to have opinions about. If the discussion is vivid but the dollars are small, stop.
-- **Availability check** — the lenses and examples that come to mind first are the
-  recent/vivid ones, not necessarily the right ones. Scan 00-index.md deliberately.
-- **Defensive-decision check** — is this recommendation optimizing the outcome, or
-  protecting the recommender? "The safe-looking option" needs the same scrutiny as
-  the bold one.
-- **Captaincy** — the assistant recommends; the human decides. Never launder a
-  recommendation as "the data says." Own it: "I'd do X because Y."
-- **Break the chain** — if an option creates compounding obligation or dependency
-  (favors, vendor/channel reliance, lifestyle-debt-style commitments), price that
-  loss of independence in; the cheapest time to say no is at the first link.
-- **Honest failure case** — the recommendation must state what happens in the
-  failure case, not only the success case.
+## STOP — you're rationalizing (red flags, both directions)
+
+**For you, the agent running this loop.** These thoughts mean stop and do the
+step anyway. Not negotiable:
+
+| Thought | Reality |
+|---|---|
+| "The lean is obviously right — skip the beat-it step" | The beat-it step exists precisely for obvious leans. |
+| "This feels like a quick pass" (money / reputation / people involved) | Recheck the real undo cost — misclassified one-way doors are the expensive mistake. |
+| "I'll log it after" | Unlogged reflects are decorative. Log before the turn ends. |
+| "The user sounds confident; agreeing is safe" | Defensive agreement is the yes-man failure this loop was rebuilt to kill. |
+| "No need to check the scoreboard this time" | The scoreboard IS the product. Thirty seconds. |
+| "This lens fits" (because it's the most recent/vivid one) | Scan 00-index.md deliberately; recent ≠ relevant. |
+| "Recommending the bold option feels risky" | If every recent call was keep/patch/wait, you're protecting yourself, not the outcome. |
+| "The data says…" | You say. Own it: "I'd do X because Y." The human decides. |
+| "The success case is compelling" | State the failure case too, always. |
+| "This topic is fun to analyze" | Effort scales with stakes, not with how easy the topic is to opine on. |
+
+**For the user's words.** When the decision framing contains one of these,
+quote it back and check it inside the card:
+- *"it's basically reversible"* → compute the actual undo cost
+- *"this time is different"* → base rate first
+- *"everyone in the space does X"* → that's analogy, not analysis
+- *"we can always change it later"* → later has a price; name it
+- *"quick question"* (about money, reputation, or people) → probably not quick
+
+## Maker ≠ checker — one-way doors get an independent adversary
+
+You are the worst judge of your own analysis, for the same reason authors
+don't review their own code. On **Type 1 runs**, if the environment can spawn
+subagents (Claude Code's Agent/Task tool), dispatch an INDEPENDENT adversary
+before writing the card: give it the framing and the evidence but **not your
+lean**; it returns its own call plus the strongest case against any
+alternative. Where it disagrees with you, the card must say so and adjudicate
+openly. No subagent support → the beat-it rule is the fallback, stated as such.
+
+## The weekly ritual — `reflect review`
+
+When the user says **"reflect review"** (or on a schedule, if they set one):
+score every due prediction (hit / miss / moot) · distill each miss into
+LESSONS.md · then output THE SCORECARD:
+
+> **SCORECARD — <date>**
+> Scored: N decisions · Hit rate: X%
+> Calibration: when I said ~80% I was right a/b · ~60% → c/d
+> Biggest miss: <one line> → lesson saved
+> Due next week: <list>
+
+The scorecard is deliberately screenshot-shaped. It is the receipt that no
+summary, thread, or book can fake: the predictions are in git history before
+the outcomes existed.
 
 ## Failure modes of this skill itself
 - Running all 24 lenses = analysis theater. Three good lenses beat twenty.

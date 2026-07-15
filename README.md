@@ -1,5 +1,9 @@
 # reflect — for builders who ship: Bezos-level thinking on every build decision, in 5 minutes
 
+**The problem with your decisions isn't information. It's honesty.** Every
+framework you've read is available to you and unused at the moment it matters.
+This makes your AI enforce them — and keep score.
+
 You're mid-build. Claude Code, Cursor, Codex — doesn't matter. And the decisions
 come at you all day:
 
@@ -107,6 +111,22 @@ with the five every builder is currently avoiding, like *"should I ship this now
 or keep polishing?"* and *"which dependency would hurt most if it died
 tomorrow?"* Want to add a thinker you trust? [CONTRIBUTING.md](CONTRIBUTING.md)
 has the lens template.
+
+## Make it fire on its own (one line, optional)
+
+Add this to your CLAUDE.md / AGENTS.md and reflect offers itself when you're stuck:
+
+```
+When I'm visibly going back and forth on a decision (pros/cons lists,
+"should we X or Y", "I can't decide"), offer to run reflect on it — once.
+```
+
+## Score yourself weekly
+
+Say **`reflect review`** and get THE SCORECARD: hit rate, calibration by
+confidence bucket ("when it said ~80% it was right 6/8 times"), the week's
+distilled lesson, what's due next. Every prediction is committed to git
+*before* its outcome exists — a scoreboard nobody can fake.
 
 ## Make it yours (2 minutes, biggest upgrade)
 
