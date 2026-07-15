@@ -152,6 +152,44 @@ both — divergences are the most informative calibration data).
 Review-by heuristic: when the expected outcome should be observable — typically
 2-6 weeks for tactical calls, a quarter for strategic ones.
 
+## Ground it in evidence (use your tools, not your vibes)
+
+A reflect run should use whatever tools the agent actually has:
+
+- **Base rates come from search, not memory.** When the analysis leans on a
+  market fact, a failure rate, or a "most companies…" claim and web search is
+  available, search before asserting — and say what you found vs. what you're
+  estimating. Never present a guess and a sourced fact in the same breath
+  without labeling which is which.
+- **Chesterton's fence is enforced by reading, not remembering.** If the
+  decision touches an existing codebase — remove X, rewrite Y, build-vs-buy Z —
+  read the relevant code, its git history, and its callers FIRST. "Why does
+  this exist?" is answered by `git log`, not by assumption.
+- **Prefer running the cheap test over describing it.** If the <1-day test in
+  DO THIS NEXT is something the agent can do right now (a benchmark, a grep
+  across the codebase, a quick prototype, checking real analytics), offer to
+  run it — or run it when the user has already said to proceed — and fold the
+  result into the answer. An hour of evidence beats a page of reasoning.
+
+## Growing the library — `reflect learn <source>`
+
+When the user says **"reflect learn <url / person / book>"**, add a new lens:
+
+1. **Fetch the source live** — never write a lens from memory of it. (When this
+   library was first built, 2 of 24 essays turned out to be about something
+   different than their titles suggested. Fetch first, always.) If the fetch
+   fails, say so and ask whether to write a knowledge-distilled version marked
+   `fetched: false`.
+2. **Compact it into `references/<slug>.md`** using the house template:
+   frontmatter (name / source / fetched / fetched_on) then Core idea → When it
+   bites → How to run it → Failure modes → a final "reach for this when…"
+   section with concrete triggers. 50-90 lines. Paraphrase; max one quote under
+   15 words.
+3. **Add one routing line to `references/00-index.md`** under the right section
+   (or a new one), following the "when it bites" one-line format.
+4. **Report** what was added and the situations where the new lens will now
+   fire, so the user can correct the routing while it's fresh.
+
 ## Guardrails (check yourself during every run)
 - **Bikeshed alarm** — effort must scale with stakes, not with how easy the topic
   is to have opinions about. If the discussion is vivid but the dollars are small, stop.

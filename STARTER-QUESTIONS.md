@@ -1,8 +1,27 @@
-# 10 decisions worth running through the loop this week
+# Decisions worth running through the loop this week
 
 You don't need a crisis to use this. Run one a day — each of these tends to
 surface something. Copy the line, say it to your AI, answer its one question
 honestly, and save the log row it gives you.
+
+## If you're building something (start here)
+
+1. **`reflect on: should I ship this now or keep polishing?`**
+   The Bezos gate eats this alive — shipping is usually a two-way door you're treating as one-way.
+
+2. **`reflect on: build it myself or use the library/service that exists?`**
+   With repo access, the loop reads what you actually have before answering — not what you remember having.
+
+3. **`reflect on: this code is ugly and I want to rewrite it`**
+   Chesterton's fence, enforced by git log. The most expensive sentence in software is "how hard could a rewrite be."
+
+4. **`reflect on: should I kill the feature nobody seems to use?`**
+   Makes you check who "nobody" actually is before you find out the hard way.
+
+5. **`reflect on: which dependency would hurt most if it broke, changed pricing, or died tomorrow?`**
+   Walk-away plans are cheap today and expensive the week you need one.
+
+## The all-purpose ten
 
 1. **`reflect on: the recurring expense I'd never approve if it were proposed fresh today`**
    Chesterton's fence in reverse — subscriptions and retainers survive on inertia, not merit.
