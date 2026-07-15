@@ -27,6 +27,13 @@ customer trust or public commitments.
 <!-- When the loop should set review-by dates. -->
 Example: tactical calls 3 weeks out, strategic calls one quarter out.
 
+## My known patterns (be honest — this is what makes it a cofounder)
+<!-- The tendencies you already know about yourself. The loop names these when
+     they fire in a decision. Also kept/grown in docs/decisions/PATTERNS.md. -->
+- Example: my time estimates run ~2x short, every time.
+- Example: I defer selling in favor of building one more feature.
+- Example: I re-litigate design decisions I've already made.
+
 ## My brain files (optional)
 <!-- Paths to your personal knowledge files — notes, a CLAUDE.md, a lessons
      journal, a strategy doc. The loop skims these while framing a decision,
