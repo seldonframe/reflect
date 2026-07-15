@@ -104,9 +104,14 @@ or keep polishing?"* and *"which dependency would hurt most if it died
 tomorrow?"* Want to add a thinker you trust? [CONTRIBUTING.md](CONTRIBUTING.md)
 has the lens template.
 
-## Make it fire on its own (one line, optional)
+## It fires itself
 
-Add this to your CLAUDE.md / AGENTS.md and reflect offers itself when you're stuck:
+The skill instructs your agent to run the loop unprompted whenever the work
+hits a choice whose undo cost exceeds a bad day — depth allocated by the
+agent's own judgment, which means the skill gets *better* as models get
+smarter, not stale. "start from first principles" also triggers it, aimed at
+rebuilding your options from the ground up. For extra reliability in other
+tools, add one line to your CLAUDE.md / AGENTS.md:
 
 ```
 When I'm visibly going back and forth on a decision (pros/cons lists,
