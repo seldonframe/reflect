@@ -7,6 +7,8 @@ Street turned it all into essays.
 
 This turns those essays into something your AI actually **runs**.
 
+![The reflect loop: you type one sentence, your AI checks if the decision can be undone, gives you a straight answer, and keeps score](assets/reflect-loop.png)
+
 You type one sentence:
 
 ```
