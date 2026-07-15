@@ -93,9 +93,13 @@ Then say `reflect on <the thing you're stuck on>`. Done.
 **ChatGPT / Gemini / Claude.ai:** paste [PROMPT.md](PROMPT.md) into custom
 instructions or the top of a chat. Same loop, no setup.
 
-**First runs:** [STARTER-QUESTIONS.md](STARTER-QUESTIONS.md) — starts with the
-five every builder is currently avoiding, like *"should I ship this now or keep
-polishing?"* and *"which dependency would hurt most if it died tomorrow?"*
+**Your first 10 minutes:** read [one example run](examples/example-reflect.md)
+(30 seconds — it shows the git-history homework and the answer card), then run
+your first reflect from [STARTER-QUESTIONS.md](STARTER-QUESTIONS.md) — it starts
+with the five every builder is currently avoiding, like *"should I ship this now
+or keep polishing?"* and *"which dependency would hurt most if it died
+tomorrow?"* Want to add a thinker you trust? [CONTRIBUTING.md](CONTRIBUTING.md)
+has the lens template.
 
 ## Make it yours (2 minutes, biggest upgrade)
 
