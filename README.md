@@ -1,8 +1,22 @@
 # reflect — for builders who ship: Bezos-level thinking on every build decision, in 5 minutes
 
-**The problem with your decisions isn't information. It's honesty.** Every
-framework you've read is available to you and unused at the moment it matters.
-This makes your AI fire them — at the exact moment they bite.
+You know the phrase. **"You're absolutely right!"** It's an actual
+[GitHub bug report](https://github.com/anthropics/claude-code/issues/3382)
+(someone counted 12 in ONE conversation — including when they were wrong),
+it had [a whole website counting it](https://absolutelyright.lol/), and
+[The Register](https://www.theregister.com/2025/08/13/claude_codes_copious_coddling_confounds/)
+wrote it up as "endless sycophancy annoys customers."
+
+The funny meme has an unfunny version: ask your AI "should I launch this?"
+and it finds 5 reasons to launch. Ask "is launching a bad idea?" and it finds
+5 reasons it is. Same product, opposite answers — it follows your lean. And
+the decisions keep coming: Stack Overflow's blog just called it
+["coding agents are giving everyone decision fatigue."](https://stackoverflow.blog/2026/05/21/coding-agents-are-giving-everyone-decision-fatigue/)
+The code takes 20 minutes now. The decisions still eat days.
+
+**reflect makes your AI argue first.** The answer isn't allowed through until
+it survives an attack — because the problem with your decisions isn't
+information, it's honesty.
 
 You're mid-build. Claude Code, Cursor, Codex — doesn't matter. And the decisions
 come at you all day:
@@ -96,7 +110,11 @@ Then say `reflect on <the thing you're stuck on>`. Done.
 **ChatGPT / Gemini / Claude.ai:** paste [PROMPT.md](PROMPT.md) into custom
 instructions or the top of a chat. Same loop, no setup.
 
-**Your first 10 minutes:** read [one example run](examples/example-reflect.md)
+**Your first 10 minutes:** here's a full run on "rewrite or patch?", start to finish:
+
+![A real run: GATE checks the undo cost, LOOK reads the git history, RESHAPE invents the cheaper option C, ATTACK tries to kill it, CARD delivers the call with the case against](assets/example-run-flow.png)
+
+Read [the same example as text](examples/example-reflect.md)
 (30 seconds — it shows the git-history homework and the answer card), then run
 your first reflect from [STARTER-QUESTIONS.md](STARTER-QUESTIONS.md) — it starts
 with the five every builder is currently avoiding, like *"should I ship this now
@@ -123,6 +141,18 @@ When I'm visibly going back and forth on a decision (pros/cons lists,
 Copy `CONTEXT.md.example` → `CONTEXT.md`: your settled decisions (so it never
 re-argues your stack), what you usually decide on, how bold you want the
 answers. Every answer lands in *your* project instead of generic advice.
+
+## Prior art & receipts
+
+The sycophancy problem this attacks is well documented:
+[claude-code#3382](https://github.com/anthropics/claude-code/issues/3382) ·
+[The Register on "endless sycophancy"](https://www.theregister.com/2025/08/13/claude_codes_copious_coddling_confounds/) ·
+[absolutelyright.lol](https://absolutelyright.lol/) ·
+[Stack Overflow on decision fatigue](https://stackoverflow.blog/2026/05/21/coding-agents-are-giving-everyone-decision-fatigue/).
+Karpathy's **LLM Council** attacks the same failure by polling multiple models
+against each other; reflect is a single-model, zero-setup cousin of that idea —
+the adversary agent never sees your lean, so its dissent is real rather than
+performed.
 
 ## Credits & sources
 
