@@ -1,0 +1,14 @@
+{
+  "name": "reflect",
+  "owner": { "name": "SeldonFrame" },
+  "description": "reflect — the decision loop that argues before it answers",
+  "plugins": [
+    {
+      "name": "reflect",
+      "source": "./",
+      "description": "Five-step decision loop: GATE, LOOK, RESHAPE, ATTACK, CARD. Your AI has to try to kill its own answer before you see it.",
+      "category": "productivity",
+      "tags": ["decision-making", "mental-models", "anti-sycophancy"]
+    }
+  ]
+}

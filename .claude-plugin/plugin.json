@@ -1,0 +1,9 @@
+{
+  "name": "reflect",
+  "description": "Your AI argues before it answers. Five-step decision loop for builders — GATE, LOOK, RESHAPE, ATTACK, CARD — built from Bezos's letters, Musk's algorithm, and Farnam Street's mental models. No more \"you're absolutely right!\"",
+  "author": { "name": "SeldonFrame" },
+  "homepage": "https://github.com/seldonframe/reflect",
+  "repository": "https://github.com/seldonframe/reflect",
+  "license": "MIT",
+  "keywords": ["decision-making", "mental-models", "anti-sycophancy", "first-principles", "bezos", "thinking"]
+}

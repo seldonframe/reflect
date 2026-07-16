@@ -100,11 +100,15 @@ builders' pack in this repo was added exactly this way.)
 
 ## Install (30 seconds)
 
-**Claude Code:**
-```bash
-git clone https://github.com/seldonframe/reflect ~/.claude/skills/reflect
+**Claude Code (one command):**
 ```
-Then say `reflect on <the thing you're stuck on>`. Done.
+/plugin marketplace add seldonframe/reflect
+/plugin install reflect@reflect
+```
+Then say `reflect on <the thing you're stuck on>`. Done — and it auto-updates.
+
+**Claude Code (manual):** clone this repo and copy `skills/reflect` into
+`~/.claude/skills/` (or `.claude/skills/` in one project).
 
 **Cursor / Codex:** paste [PROMPT.md](PROMPT.md) into your `AGENTS.md`.
 **ChatGPT / Gemini / Claude.ai:** paste [PROMPT.md](PROMPT.md) into custom
@@ -138,7 +142,7 @@ When I'm visibly going back and forth on a decision (pros/cons lists,
 
 ## Make it yours (2 minutes, biggest upgrade)
 
-Copy `CONTEXT.md.example` → `CONTEXT.md`: your settled decisions (so it never
+Copy `CONTEXT.md.example` → `skills/reflect/CONTEXT.md` (next to SKILL.md): your settled decisions (so it never
 re-argues your stack), what you usually decide on, how bold you want the
 answers. Every answer lands in *your* project instead of generic advice.
 
